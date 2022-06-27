@@ -23,6 +23,8 @@ bson = "*"
 flask-restx = "*"
 flasgger = "*"
 pylint = "*"
+safety = "*"
+black = "*"
 
 [dev-packages]
 
