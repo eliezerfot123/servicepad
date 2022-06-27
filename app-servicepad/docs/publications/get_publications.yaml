@@ -1,0 +1,16 @@
+Get all user publications from user 
+---
+tags:
+  - Publications
+
+parameters:
+  - in: header
+    name: X-Access-Token
+    required: true
+
+responses:
+  200:
+    description: get user publications, if previously logged in.
+
+  401:
+    description: If the user was not successfully logged in and his token was not sent. 

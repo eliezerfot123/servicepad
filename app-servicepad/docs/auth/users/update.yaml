@@ -1,0 +1,35 @@
+Update User 
+---
+tags:
+  - User Management
+parameters:
+  - name: body
+    description: The body should contain the user Registration data
+    in: body
+    required: true
+    schema:
+      type: object
+      required:
+        - "email"
+        - "password"
+        - "username"
+      properties:
+        fullname:
+          type: "fullname"
+          example: "Eliezer Romero"
+        email:
+          type: "email"
+          example: "youremail@server.com"
+        password:
+          type: "string"
+          format: password
+          example: "********"
+        images:
+          type: "files"
+          example: "exc4.jpg"
+responses:
+  201:
+    description: When the user succeeds in updating the data requested to be updated
+
+  400:
+    description: Fails to Update due to bad request data, and you may not have used the section start token.

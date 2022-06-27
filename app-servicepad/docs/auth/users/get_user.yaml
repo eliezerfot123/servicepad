@@ -1,0 +1,16 @@
+GET all user register
+---
+tags:
+  - User Management
+
+parameters:
+  - in: header
+    name: Get User
+    required: true
+
+responses:
+  200:
+    description: Get User
+
+  401:
+    description: Fail if it's not the method get

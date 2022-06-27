@@ -1,0 +1,32 @@
+User Registration
+---
+tags:
+  - User Management
+parameters:
+  - name: body
+    description: The body should contain the user Registration data
+    in: body
+    required: true
+    schema:
+      type: object
+      required:
+        - "fullname"
+        - "email"
+        - "password"
+      properties:
+        fullname:
+          type: "fullname"
+          example: "Eliezer Romero"
+        email:
+          type: "email"
+          example: "youremail@server.com"
+        password:
+          type: "string"
+          format: password
+          example: "********"
+responses:
+  201:
+    description: When a user successfully logs in
+
+  400:
+    description: Fails to Register due to bad request data
