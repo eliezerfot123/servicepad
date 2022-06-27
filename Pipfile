@@ -22,6 +22,7 @@ pillow = "*"
 bson = "*"
 flask-restx = "*"
 flasgger = "*"
+pylint = "*"
 
 [dev-packages]
 
