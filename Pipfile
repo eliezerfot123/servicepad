@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+ipdb = "*"
+pytest = "*"
+flask = "*"
+psycopg2-binary = "*"
+sqlalchemy = "*"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
+flask-marshmallow = "*"
+marshmallow-sqlalchemy = "*"
+passlib = "*"
+itsdangerous = "*"
+flask-httpauth = "*"
+werkzeug = "*"
+pyjwt = "*"
+pillow = "*"
+bson = "*"
+flask-restx = "*"
+flasgger = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
